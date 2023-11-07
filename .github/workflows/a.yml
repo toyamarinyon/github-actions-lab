@@ -36,13 +36,13 @@ jobs:
           # Discussionの本文
         
           body: |-
-            ## 1. 各issueの相談
+            title
             
         
           # ここは触らなくてOK
           query: |
-            mutation($title:String!, $body:String!, $repositoryId:ID!, $categoryId: ID!) {
-              createDiscussion(input: {repositoryId: $repositoryId, categoryId: $categoryId, title: $title, body: $body}) {
+            mutation($title:String!, $body:String!) {
+              createDiscussion(input: {repositoryId: "R_kgDOKqVkug", categoryId: "DIC_kwDOKqVkus4CawA6", title: $title, body: $body}) {
                 discussion {
                   id
                 }
