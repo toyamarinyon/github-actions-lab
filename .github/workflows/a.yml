@@ -37,7 +37,6 @@ jobs:
         
           body: |-
             ## 1. 各issueの相談
-            - [GitHub Projects](https://github.com)
             
         
           # ここは触らなくてOK
