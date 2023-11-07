@@ -1,5 +1,6 @@
 name: create_discussion_for_meeting_note
 on:
+  push:
   workflow_dispatch:
   schedule:
     # cron: "分 時 * * 曜日"で指定します。タイムゾーンが異なるので、9時間前の時間にしてください。
@@ -39,14 +40,10 @@ jobs:
             title
 
             ## 1. 各issueの相談
-            - [GitHub Projects](https://github.com/orgs/route06/projects/21/views/5)
             
-            ## 2. フリーディスカッション
-            - 英語の記事やコンテンツのゆる共有
-            - その他自由に
-
-
+            - [GitHub Projects](https://github.com)
             
+         
         
           # ここは触らなくてOK
           query: |
