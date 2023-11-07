@@ -18,9 +18,9 @@ jobs:
       - id: get_date
         name: Get date
         run: |
-          tomorrow=$(date --date '+1 day' +%Y/%m/%d)
+          next_thur=$(date --date 'next thur' +%Y/%m/%d)
           today=$(date +%Y/%m/%d)
-          echo "tomorrow=$tomorrow" >> $GITHUB_OUTPUT
+          echo "nextThur=$nextThur" >> $GITHUB_OUTPUT
           echo "today=$today" >> $GITHUB_OUTPUT
 
       - name: Create a new discussion
@@ -31,7 +31,7 @@ jobs:
           # ${{steps.get_date.outputs.today}}と入力すると、当日の日付に置き換わります
           # 例: ${{steps.get_date.outputs.today}} ミーティング議事メモ
           # ${{steps.get_date.outputs.tomorrow}}と入力すると、明日の日付に置き換わります
-          title: "yyyymmdd＿マーケティング定例"
+          title: "${{steps.get_date.outputs.next_thur}}＿マーケティング定例"
           # Discussionの本文
         
           body: |-
