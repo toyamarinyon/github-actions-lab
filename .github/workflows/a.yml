@@ -37,12 +37,12 @@ jobs:
           # Discussionの本文
         
           body: |-
-            📝 確認 Kanban
-
-            - [Plain EDI Backlog](https://github.com
-            - [前回の議事録](https://github.com/route06/plain)
-
-            共有・相談事項あれば自由にコメントしてください 📝
+            1. 各issueの相談
+            - [GitHub Projects](https://github.com/orgs/route06/projects/21/views/5)
+            
+            2. フリーディスカッション
+            - 英語の記事やコンテンツのゆる共有
+            - その他自由に
 
           # ここは触らなくてOK
           query: |
