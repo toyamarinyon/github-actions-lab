@@ -38,9 +38,11 @@ jobs:
         
           body: |-
             1. 各issueの相談
-            - [GitHub Projects](https://github.com/orgs/route06/projects/21/views/5)
+
+            - [GitHub Projects](https://github.com/orgs/route06)
             
             2. フリーディスカッション
+
             - 英語の記事やコンテンツのゆる共有
             - その他自由に
 
