@@ -49,7 +49,7 @@ jobs:
           # ここは触らなくてOK
           query: |
             mutation($title:String!, $body:String!, $repositoryId: ID!) {
-              createDiscussion(input: {repositoryId: "R_kgDOKqVkug", categoryId: "DIC_kwDOKqVkus4CawA6", title: $title, body: $body}) {
+              createDiscussion(input: {repositoryId: $repositoryId, categoryId: "DIC_kwDOKqVkus4CawA6", title: $title, body: $body}) {
                 discussion {
                   id
                 }
