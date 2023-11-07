@@ -27,8 +27,6 @@ jobs:
         id: create_discussion
         uses: octokit/graphql-action@v2.x
         with:
-          repositoryId: "R_kgDOKqVkug"
-          categoryId: "DIC_kwDOKqVkus4CawA6"
           # DiscussionのTitle
           # ${{steps.get_date.outputs.today}}と入力すると、当日の日付に置き換わります
           # 例: ${{steps.get_date.outputs.today}} ミーティング議事メモ
@@ -48,8 +46,8 @@ jobs:
 
           # ここは触らなくてOK
           query: |
-            mutation($title:String!, $body:String!, $repositoryId: ID!) {
-              createDiscussion(input: {repositoryId: $repositoryId, categoryId: "DIC_kwDOKqVkus4CawA6", title: $title, body: $body}) {
+            mutation($title:String!, $body:String!) {
+              createDiscussion(input: {repositoryId:"R_kgDOKqVkug", categoryId: "DIC_kwDOKqVkus4CawA6", title: $title, body: $body}) {
                 discussion {
                   id
                 }
