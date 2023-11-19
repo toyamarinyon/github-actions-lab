@@ -1,0 +1,30 @@
+name: テストコードの実装を後回しにする
+description: 戦略的にテストコードを後回しにする場合、こちらからIssueを作成し、該当ユースケースとit.todoにした箇所を入力してください
+title: テストコードの実装「#ユースケース#」
+labels:
+  - "EDI"
+  - "frontend"
+  - "postpone-testing"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        テストコードを後回しにするユースケースissueのURLとit.todoにしたコミットのhashを貼り付けてください📝
+
+  - type: input
+    attributes:
+      label: テストコードの実装を後回しにするユースケースissue
+      description: |
+        ユースケースのissueにリンクされるように、issueのURL`https://github.com/route06/plain/issues/${issue_no}`を入力してください
+      placeholder: https://github.com/route06/plain/issues/
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: it.todoにしたコミットのhash
+      description: |
+        it.todoにしたコミットのhashを入力してください
+    validations:
+      required: true
