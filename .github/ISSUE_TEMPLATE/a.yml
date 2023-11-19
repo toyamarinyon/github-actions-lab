@@ -17,7 +17,7 @@ body:
       label: テストコードの実装を後回しにするユースケースissue
       description: |
         ユースケースのissueにリンクされるように、issueのURL`https://github.com/route06/plain/issues/${issue_no}`を入力してください
-      placeholder: https://github.com/route06/plain/issues/
+      value: https://github.com/route06/plain/issues/
     validations:
       required: true
 
